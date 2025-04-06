@@ -30,9 +30,6 @@ jobs:
           docker buildx build \
             --push \
             --tag $IMAGE_NAME:latest \
-            --tag $IMAGE_NAME:${GITHUB_SHA::7}
             .
-          echo "Pushing image: $IMAGE_NAME:latest"
-          echo "Pushing image: $IMAGE_NAME:${GITHUB_SHA::7}"
 
 
